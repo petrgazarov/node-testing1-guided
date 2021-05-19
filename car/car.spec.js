@@ -26,6 +26,7 @@ describe('Car class', () => {
   })
   it('creates cars with make and model', () => {
     expect(celica).toMatchObject({ make: 'toyota', model: 'celica' })
+    expect(celica).toMatchSnapshot()
   })
 })
 
