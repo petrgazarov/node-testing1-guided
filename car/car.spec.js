@@ -25,7 +25,7 @@ describe('Car class', () => {
     expect(celica).toHaveProperty('make', 'toyota')
   })
   it('creates cars with make and model', () => {
-    expect('foo').toMatch({ make: 'toyota', model: 'celica' })
+    expect(celica).toMatchObject({ make: 'toyota', model: 'celica' })
   })
 })
 
