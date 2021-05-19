@@ -7,7 +7,7 @@ function bar() {
 
 describe('Car class', () => {
   it('exists', () => {
-    
+    expect(Car).toBeDefined()
   })
 })
 
