@@ -1,3 +1,7 @@
+function foo() {
+  return 5
+}
+
 // Test away!
 describe('our first tests', () => {
 
