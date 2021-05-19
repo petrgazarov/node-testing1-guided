@@ -6,7 +6,7 @@ function bar() {
 }
 
 describe('Car class', () => {
-  it('exits', () => {
+  it('exists', () => {
     
   })
 })
