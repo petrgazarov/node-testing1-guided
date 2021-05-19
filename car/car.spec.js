@@ -5,6 +5,12 @@ function bar() {
   return {}
 }
 
+describe('Car class', () => {
+  it('exits', () => {
+    
+  })
+})
+
 describe('our first tests', () => {
   it('foo returns five', () => {
     expect(foo).toBeDefined() // assertion
