@@ -35,6 +35,7 @@ describe('Car class', () => {
     expect(celica.drive).toBe(Car.prototype.drive)
   })
   it('drives increasing the odometer', () => {
+    expect(celica.odometer).toBe(0)
     celica.drive(5)
     expect(celica.odometer).toBe(5)
   })
