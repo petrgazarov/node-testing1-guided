@@ -11,7 +11,7 @@ describe('our first tests', () => {
   it('foo returns five', () => {
     expect(foo).toBeDefined() // assertion
     expect(foo).toBeTruthy() // another assertion
-    expect(foo()).toBe(5)      // should be related to the ONE thing
+    expect(5).toBe(5)      // should be related to the ONE thing
   })
 
   test('bar works', () => {
