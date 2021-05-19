@@ -1,4 +1,4 @@
-
+const Car = require('./car')
 
 function foo() {
   return 5
@@ -11,6 +11,7 @@ describe('Car class', () => {
   it('exists', () => {
     expect(Car).toBeDefined()
   })
+  it('')
 })
 
 describe('our first tests', () => {
