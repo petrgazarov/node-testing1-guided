@@ -15,10 +15,10 @@ describe('our first tests', () => {
   })
 
   test('bar works', () => {
-    expect(bar).toBeDefined() // assertion
-    expect(bar).toBeTruthy() // another assertion
+    expect(bar).toBeDefined()
+    expect(bar).toBeTruthy()
     expect(bar()).not.toBe({}) // only if truly same object passes
-    expect(bar()).toEqual({})
+    expect(bar()).toEqual({}) // keys and values the same
     expect(bar()).toMatchObject({})
   })
 
