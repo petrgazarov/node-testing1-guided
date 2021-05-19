@@ -39,7 +39,7 @@ describe('Car class', () => {
     celica.drive(5)
     expect(celica.odometer).toBe(5)
   })
-  // 1
+  // 1  driving returns updated odometer
 })
 
 describe('our first tests', () => {
