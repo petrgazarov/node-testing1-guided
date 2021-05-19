@@ -8,7 +8,7 @@ function bar() {
 }
 
 describe('Car class', () => {
-  const celica = new Car()
+  beforeEach()
   it('exists', () => {
     expect(Car).toBeDefined()
   })
