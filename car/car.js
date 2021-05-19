@@ -6,7 +6,7 @@ class Car {
     this.owner = "Dan"
   }
 
-  
+
 }
 
 module.exports = Car

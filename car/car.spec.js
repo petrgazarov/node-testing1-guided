@@ -28,6 +28,9 @@ describe('Car class', () => {
     expect(celica).toMatchObject({ make: 'toyota', model: 'celica' })
     expect(celica).toMatchSnapshot()
   })
+  it('has a drive method', () => {
+    expect(celica).toHaveProperty('drive')
+  })
 })
 
 describe('our first tests', () => {
