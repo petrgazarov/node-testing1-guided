@@ -17,7 +17,7 @@ describe('our first tests', () => {
   test('bar works', () => {
     expect(bar).toBeDefined() // assertion
     expect(bar).toBeTruthy() // another assertion
-    expect(bar()).toBe({})
+    expect({}).toBe({})
   })
 
 })
