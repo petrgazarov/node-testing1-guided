@@ -7,7 +7,7 @@ describe('our first tests', () => {
 
   it('works', () => {
 
-    expect(foo).toBeDefined()
+    expect(foo).not.toBeDefined() // assertion
   })
 
   test('works some more', () => {
