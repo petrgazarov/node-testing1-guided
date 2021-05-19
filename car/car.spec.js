@@ -15,7 +15,10 @@ describe('Car class', () => {
     const celica = new Car()
     expect(celica).toBeInstanceOf(Car)
   })
-  it('')
+  it('creates cars with a brand property', () => {
+    const celica = new Car()
+    expect(celica).toHaveProperty('brand')
+  })
 })
 
 describe('our first tests', () => {
