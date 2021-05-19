@@ -29,10 +29,10 @@ describe('Car class', () => {
     expect(celica).toMatchSnapshot()
   })
   it('has a drive method', () => {
-    expect(celica).toHaveProperty('drive')
     expect(celica.drive).toBeDefined()
+    expect(celica).toHaveProperty('drive')
     expect(celica.drive).toBeInstanceOf(Function)
-    
+    expect(celica.drive).toBe(Car.prototype.drive)
   })
 })
 
