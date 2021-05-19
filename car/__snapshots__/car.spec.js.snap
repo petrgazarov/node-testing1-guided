@@ -4,5 +4,6 @@ exports[`Car class creates cars with make and model 1`] = `
 Car {
   "make": "toyota",
   "model": "celica",
+  "owner": "Dan",
 }
 `;
