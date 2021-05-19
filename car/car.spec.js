@@ -40,7 +40,7 @@ describe('Car class', () => {
     expect(celica.odometer).toBe(5)
   })
   it('driving increases the odometer', () => {
-    celica.drive(5)
+    expect(celica.drive(5)).toBe(5)
   })
 })
 
