@@ -8,6 +8,7 @@ class Car {
   }
 
   drive(miles) {
+    // 2
     this.odometer += miles
   }
 }
