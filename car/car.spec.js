@@ -24,8 +24,8 @@ describe('Car class', () => {
   it('creates cars with a make property', () => {
     expect(celica).toHaveProperty('make', 'toyota')
   })
-  it('creates cars with make and model' , () => {
-    expect(celica).toEqual({ make: ''})
+  it('creates cars with make and model', () => {
+    expect(celica).toEqual({ make: 'toyota', model: 'celica' })
   })
 })
 
