@@ -15,8 +15,9 @@ describe('our first tests', () => {
   })
 
   test('bar works', () => {
-    expect(bar).not.toBeDefined() // assertion
-    expect(bar).not.toBeTruthy() // another assertion
+    expect(bar).toBeDefined() // assertion
+    expect(bar).toBeTruthy() // another assertion
+    expect(bar()).toBe({})
   })
 
 })
