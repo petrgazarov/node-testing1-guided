@@ -17,7 +17,8 @@ describe('our first tests', () => {
   test('bar works', () => {
     expect(bar).toBeDefined() // assertion
     expect(bar).toBeTruthy() // another assertion
-    expect(bar()).toBe({})
+    expect(bar()).not.toBe({}) // only if truly same object passes
+    expect(bar()).toEqual({}) 
   })
 
 })
