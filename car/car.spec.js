@@ -10,7 +10,7 @@ function bar() {
 describe('Car class', () => {
   let celica
   beforeEach(() => {
-    celica = new Car('celica')
+    celica = new Car()
   })
   it('exists', () => {
     expect(Car).toBeDefined()
