@@ -34,6 +34,7 @@ describe('Car class', () => {
     expect(celica.drive).toBeInstanceOf(Function)
     expect(celica.drive).toBe(Car.prototype.drive)
   })
+  it('')
 })
 
 describe('our first tests', () => {
