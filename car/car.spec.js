@@ -5,7 +5,6 @@ function bar() {
   return {}
 }
 
-// Test away!
 describe('our first tests', () => {
   it('foo returns five', () => {
     expect(foo).toBeDefined() // assertion
