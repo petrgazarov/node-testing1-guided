@@ -8,15 +8,14 @@ function bar() {
 }
 
 describe('Car class', () => {
+  const celica = new Car()
   it('exists', () => {
     expect(Car).toBeDefined()
   })
   it('Car can create a car instance', () => {
-    const celica = new Car()
     expect(celica).toBeInstanceOf(Car)
   })
   it('creates cars with a brand property', () => {
-    const celica = new Car()
     expect(celica).toHaveProperty('brand')
   })
 })
