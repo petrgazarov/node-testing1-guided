@@ -13,8 +13,9 @@ describe('Car class', () => {
   })
   it('Car can create a car instance', () => {
     const celica = new Car()
-    expect(celica).not.toBeInstanceOf(Car)
+    expect(celica).toBeInstanceOf(Car)
   })
+  it('')
 })
 
 describe('our first tests', () => {
