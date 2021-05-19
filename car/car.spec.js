@@ -1,7 +1,11 @@
 // Test away!
 describe('our first tests', () => {
 
-  describe('first section of first tests', () => {
+  it('works', () => {
+
+  })
+
+  test('works some more', () => {
 
   })
 
