@@ -19,7 +19,7 @@ describe('our first tests', () => {
     expect(bar).toBeTruthy() // another assertion
     expect(bar()).not.toBe({}) // only if truly same object passes
     expect(bar()).toEqual({})
-    expect(bar()).tom
+    expect(bar()).toMatchObject({})
   })
 
 })
