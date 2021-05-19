@@ -34,7 +34,10 @@ describe('Car class', () => {
     expect(celica.drive).toBeInstanceOf(Function)
     expect(celica.drive).toBe(Car.prototype.drive)
   })
-  it('')
+  it('drives increasing the odometer', () => {
+    celica.drive(5)
+    expect(celica.odometer).toBe(5)
+  })
 })
 
 describe('our first tests', () => {
