@@ -30,6 +30,9 @@ describe('Car class', () => {
   })
   it('has a drive method', () => {
     expect(celica).toHaveProperty('drive')
+    expect(celica.drive).toBeDefined()
+    expect(celica.drive).toBeInstanceOf(Function)
+    
   })
 })
 
