@@ -3,7 +3,10 @@
 // 3. car instance has drive() and driveAsync() methods
 
 class Car {
-
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
 }
 
 module.exports = Car;

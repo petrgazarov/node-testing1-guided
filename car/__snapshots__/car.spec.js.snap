@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Car class creates car with make and model 1`] = `
+Car {
+  "make": "toyota",
+  "model": "prius",
+}
+`;
