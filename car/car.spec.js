@@ -8,22 +8,34 @@ describe('Car class', () => {
     expect(car).toBeInstanceOf(Car);
   });
 
-  it('creates cars with make property', () => {
+  it('creates a car with make property', () => {
     const car = new Car('toyota');
 
     expect(car).toHaveProperty('make');
   });
 
-  it('creates cars with model property', () => {
+  it('creates a car with model property', () => {
     const car = new Car('toyota', 'prius');
 
     expect(car).toHaveProperty('model');
   });
 
-  it('creates car with make and model', () => {
+  it('creates a car with make and model', () => {
     const car = new Car('toyota', 'prius');
 
     expect(car).toMatchObject({ make: 'toyota', model: 'prius' });
     expect(car).toMatchSnapshot();
+  });
+
+  it('creates a car with odometer property', () => {
+    const car = new Car('toyota', 'prius');
+
+    expect(car).toHaveProperty('odometer');
+  });
+
+  it('creates a car with odometer set to 0', () => {
+    const car = new Car('toyota', 'prius');
+
+    expect(car.odometer).toBe(0);
   });
 });
