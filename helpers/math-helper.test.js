@@ -2,13 +2,10 @@ const { sum } = require('./math-helper');
 
 describe('sum', () => {
   it('adds positive numbers', () => {
-    // 1. Call the function
-    // 2. Compare the result with an expected value
-
-    expect(sum(1, 2)).toEqual(4);
+    expect(sum(1, 2)).toEqual({ result: 3 });
   });
 
-  it.skip('works with negative numbers', () => {
-
+  it('works with negative numbers', () => {
+    expect(sum(-2, 2)).toEqual({ result: 0 });
   });
 });
