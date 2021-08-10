@@ -51,4 +51,26 @@ describe('Car class', () => {
       expect(car.odometer).toBe(36);      
     });
   });
+
+  describe('driveAsync()', () => {
+    it('has a driveAsync method', () => {
+      expect(car.driveAsync).toBeDefined();
+      expect(car.driveAsync).toBeInstanceOf(Function);
+      expect(car.driveAsync).toBe(Car.prototype.driveAsync);
+    });
+
+    it('increases the odometer', async () => {
+      expect(car.odometer).toBe(0);
+      await car.driveAsync(5);
+      expect(car.odometer).toBe(5);
+    });
+
+    it('works with multiple arguments', () => {
+      expect(car.odometer).toBe(0);
+
+      return car.driveAsync(5, 10, 21).then(() => {
+        expect(car.odometer).toBe(36);
+      });
+    });
+  });
 });

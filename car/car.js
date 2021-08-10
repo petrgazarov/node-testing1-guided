@@ -12,6 +12,14 @@ class Car {
   drive(...numMiles) {
     this.odometer += numMiles.reduce((acc, cur) => acc + cur, 0);
   }
+
+  async driveAsync(...numMiles) {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(this.drive(...numMiles));
+      }, 50);
+    });
+  }
 }
 
 module.exports = Car;
