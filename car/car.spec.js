@@ -31,4 +31,24 @@ describe('Car class', () => {
   it('creates a car with odometer set to 0', () => {
     expect(car.odometer).toBe(0);
   });
+
+  describe('drive()', () => {
+    it('has a drive method', () => {
+      expect(car.drive).toBeDefined();
+      expect(car.drive).toBeInstanceOf(Function);
+      expect(car.drive).toBe(Car.prototype.drive);
+    });
+
+    it('increases the odometer', () => {
+      expect(car.odometer).toBe(0);
+      car.drive(5);
+      expect(car.odometer).toBe(5);
+    });
+
+    it('works with multiple arguments', () => {
+      expect(car.odometer).toBe(0);
+      car.drive(5, 10, 21);
+      expect(car.odometer).toBe(36);      
+    });
+  });
 });
