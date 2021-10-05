@@ -1,5 +1,6 @@
-// Car has make, model and odometer properties
-// Car has a drive() method
+// 1. Car class creates car instances
+// 2. car instance has model, make, and odometer properties
+// 3. car instance has drive(numMiles) and driveAsync(numMiles) methods
 
 class Car {
   constructor(make, model) {
@@ -8,12 +9,16 @@ class Car {
     this.odometer = 0;
   }
 
-  drive(distance) {
-    this.odometer += distance;
+  drive(...numMiles) {
+    this.odometer += numMiles.reduce((acc, cur) => acc + cur, 0);
   }
 
-  async driveAsync(distance) {
-    this.odometer += distance;
+  async driveAsync(...numMiles) {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(this.drive(...numMiles));
+      }, 50);
+    });
   }
 }
 
