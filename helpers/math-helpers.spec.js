@@ -1,4 +1,4 @@
-const { sum } = require('./math-helpers');
+const { sum, divide } = require('./math-helpers');
 
 describe('sum()', () => { // test group
   it('adds up two positive numbers', () => { // test (test case, test example)
@@ -15,19 +15,19 @@ describe('sum()', () => { // test group
 });
 
 describe('divide()', () => {
-  it.skip('divides positive numbers', () => {
-
+  it('divides positive numbers', () => {
+    expect(divide(6, 3)).toBe(2);
   });
 
-  it.skip('divides a positive number by a negative number', () => {
-
+  it('divides a positive number by a negative number', () => {
+    expect(divide(6, -3)).toBe(-2);
   });
 
-  it.skip('divides a negative number by a positive number', () => {
-
+  it('divides a negative number by a positive number', () => {
+    expect(divide(-6, 3)).toBe(-2);
   });
 
-  it.skip('divides negative numbers', () => {
-
+  it('divides negative numbers', () => {
+    expect(divide(-6, -3)).toBe(2);
   });
 });
