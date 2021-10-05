@@ -5,27 +5,34 @@ const Car = require('./car');
 // 3. Refactor / improve code
 
 describe('Car class', () => {
-  it('can create a car instance', () => {
-    const car = new Car();
+  let car;
 
+  beforeEach(() => {
+    car = new Car('Toyota', 'Prius');
+  });
+
+  it('can create a car instance', () => {
     expect(car).toBeInstanceOf(Car);
   });
 
   it('creates a car with a make property', () => {
-    const car = new Car('Toyota', 'Prius');
-
     expect(car).toHaveProperty('make');
   });
 
   it('creates a car with a model property', () => {
-    const car = new Car('Toyota', 'Prius');
-
     expect(car).toHaveProperty('model');
   });
 
   it('creates a car with the model and make passed as arguments', () => {
-    const car = new Car('Toyota', 'Prius');
+    expect(car).toMatchObject({ make: 'Toyota', model: 'Prius' });
+  });
 
-    expect(car).toEqual({ make: 'Toyota', model: 'Prius' });
+  it('has an odometer property that is set to 0', () => {
+    expect(car).toHaveProperty('odometer');
+    expect(car.odometer).toBe(0);
+  });
+
+  describe('drive()', () => {
+    
   });
 });
