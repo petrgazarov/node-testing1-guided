@@ -1,12 +1,15 @@
 const { sum } = require('./math-helpers');
 
-test('sum() adds up two numbers', () => {
-  // compare expected with actual
-
-  const x = 2;
-  const y = 3;
-  const expected = 5;
-  const actual = sum(x, y);
-
-  expect(actual).toBe(expected);
+describe('sum()', () => {
+  it('adds up two positive numbers', () => {
+    expect(sum(2, 3)).toBe(5);
+  });
+  
+  it('adds up two numbers: one negative and one positive', () => {
+    expect(sum(-2, 3)).toBe(1);
+  });
+  
+  it('adds up two negative numbers', () => {
+    expect(sum(-2, -3)).toBe(-5);
+  });
 });
