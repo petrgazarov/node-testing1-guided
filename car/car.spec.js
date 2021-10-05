@@ -33,6 +33,20 @@ describe('Car class', () => {
   });
 
   describe('drive()', () => {
-    
+    it('has a drive method', () => {
+      expect(car.drive).toBeInstanceOf(Function);
+      expect(car.drive).toBe(Car.prototype.drive);
+    });
+
+    it('increases the odometer', () => {
+      car.drive(5);
+      expect(car.odometer).toBe(5);
+      car.drive(5);
+      expect(car.odometer).toBe(10);
+    });
+  });
+
+  describe('driveAsync', () => {
+
   });
 });

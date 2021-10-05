@@ -7,6 +7,10 @@ class Car {
     this.model = model;
     this.odometer = 0;
   }
+
+  drive(distance) {
+    this.odometer += distance;
+  }
 }
 
 module.exports = Car;
